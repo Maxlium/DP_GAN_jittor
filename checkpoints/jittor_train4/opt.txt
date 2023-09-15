@@ -1,0 +1,49 @@
+                EMA_decay: 0.9999                        
+             add_vgg_loss: False                         
+               batch_size: 1                             
+                    beta1: 0.0                           
+                    beta2: 0.999                         
+               channels_D: 64                            
+               channels_G: 64                            
+          checkpoints_dir: ./checkpoints                 
+           continue_train: False                         
+                crop_size: 512                           
+             dataset_mode: ade20k                        
+         dataset_ori_path: ./train_resized               
+             dataset_path: ./datasets                    
+                 freq_fid: 5000                          
+               freq_print: 1000                          
+           freq_save_ckpt: 20000                         
+         freq_save_latest: 10000                         
+           freq_save_loss: 2500                          
+         freq_smooth_loss: 250                           
+                  gpu_ids: 1                             
+                img_path : ./train_resized/imgs          
+                init_type: xavier                        
+            init_variance: 0.02                          
+              input_path : ./B/val_B_labels_resized      
+               json_path : ./B/label_to_img.json         
+               lambda_kld: 0.05                          
+          lambda_labelmix: 10.0                          
+               lambda_vgg: 10.0                          
+       loaded_latest_iter: 0                             	[default: None]
+                     lr_d: 0.0004                        
+                     lr_g: 0.0004                        
+                     name: jittor_train4                 
+                      ngf: 64                            
+               no_3dnoise: False                         
+                   no_EMA: False                         
+      no_balancing_inloss: False                         
+                  no_flip: False                         
+              no_labelmix: False                         
+         no_spectral_norm: False                         
+                   norm_E: spectralinstance              
+               num_epochs: 250                           
+           num_res_blocks: 6                             
+              output_path:                               
+          param_free_norm: syncbatch                     
+                    phase: train                         
+                     seed: 43                            
+                 spade_ks: 3                             
+               which_iter: latest                        
+                    z_dim: 256                           
