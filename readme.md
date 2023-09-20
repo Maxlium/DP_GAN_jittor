@@ -71,6 +71,7 @@ CUDA_VISIBLE_DEVICES="2" python3 train.py --name jittor_train --input_path ./tra
 ```
 
 - 训练之前会进行数据划分，将**训练集**和**验证集**保存在datasets文件夹下。
+- 训练好的权重：链接: https://pan.baidu.com/s/1dehotg6d9J2mSxp91DSqHA?pwd=1341 提取码: 1341 ；下载好并放入**checkpoints/jittor_train4** 文件夹下
 
 ## 测试
 
@@ -92,6 +93,10 @@ CUDA_VISIBLE_DEVICES="2" python3 train.py --name jittor_train --input_path ./tra
 ```shell
 CUDA_VISIBLE_DEVICES="2" python3 test.py --name jittor_train4 --input_path ./B/val_B_labels_resized  --json_path ./B/label_to_img.json --img_path ./train_resized/imgs --output_path ./results
 ```
+## 训练损失函数和FID指标
+![combined](https://github.com/Maxlium/DP_GAN_jittor/assets/89024317/0b310a1c-1d0d-4341-92b9-c37949bf1e7c)
+![plot_fid](https://github.com/Maxlium/DP_GAN_jittor/assets/89024317/29b4c517-b394-4f26-a814-04668b1fb929)
+
 
 
 
